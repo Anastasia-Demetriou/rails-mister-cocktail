@@ -1,5 +1,10 @@
-<h1> Cocktails Index Page</h1>
+<h1> Cocktails</h1>
+
+<h2>This is your list:</h2>
+
   <% @cocktails.each do |cocktail| %>
   <p><%= cocktail.name %></p>
   <% end %>
+
+  <%= link_to "Create New Cocktail", new_cocktail_path %>
 
